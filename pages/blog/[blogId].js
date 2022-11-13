@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 
+
 function BlogDetails() {
     const router = useRouter();
     const blogId = router.query.blogId

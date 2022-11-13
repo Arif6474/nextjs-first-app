@@ -1,7 +1,10 @@
 function index() {
     return (
         <div>
-       <h1>  This is a blog page </h1>
+       <h1>  blog </h1>
+       <h1>  blog 2</h1>
+       <h1>  blog 3</h1>
+       <h1>  blog 4</h1>
         </div>
     );
 }
