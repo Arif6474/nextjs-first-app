@@ -12,9 +12,9 @@ export default function Comment() {
     },[id])
   return (
     <div>
-     <h1>{comment.name}</h1>
-     <p>{comment.email}</p>
-     <h3>{comment.body}</h3>
+     <h1>{comment?.name}</h1>
+     <p>{comment?.email}</p>
+     <h3>{comment?.body}</h3>
   
     </div>
   )
