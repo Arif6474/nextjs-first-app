@@ -19,6 +19,12 @@ function Todos() {
         })
         getAllTodos()
     }
+    const deleteTodo =(id) => {
+     fetch(`/api/todos/${id}` , {
+      method: 'DELETE',
+     })
+     getAllTodos()
+    }
     return (
         <div>
             <h1>
@@ -33,7 +39,9 @@ function Todos() {
                         <div key={todo.id}>
                       <Link href={`todos/${todo.id}`}>  <button>{todo.id}</button></Link>
                         <h3>{todo.title}</h3>
-                        <p>{todo.userId}</p>
+                        
+                        <button onClick={() =>deleteTodo(todo.id)}>Delete</button>
+                        <hr />
                         </div>
                     )
                 })
