@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 function Todos() {
@@ -30,7 +31,7 @@ function Todos() {
                 todos.map(todo => {
                     return(
                         <div key={todo.id}>
-                        <h2>{todo.id}</h2>
+                      <Link href={`todos/${todo.id}`}>  <button>{todo.id}</button></Link>
                         <h3>{todo.title}</h3>
                         <p>{todo.userId}</p>
                         </div>
